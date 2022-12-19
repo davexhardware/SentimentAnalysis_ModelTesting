@@ -1,0 +1,34 @@
+ Results for max_df= 0.850000 
+
+Accuracy: 0.9088, True Positives: 9177, False Positives: 1016, True Negative: 8999, False Negative: 808, Precision: 0.9003, Tpr: 0.9191, Tnr: 0.8986, F1S: 0.909602869077718
+
+
+ Results for max_df= 0.870000 
+
+Accuracy: 0.9088, True Positives: 9177, False Positives: 1016, True Negative: 8999, False Negative: 808, Precision: 0.9003, Tpr: 0.9191, Tnr: 0.8986, F1S: 0.909602869077718
+
+
+ Results for max_df= 0.890000 
+
+Accuracy: 0.9085, True Positives: 9170, False Positives: 1015, True Negative: 9000, False Negative: 815, Precision: 0.9003, Tpr: 0.9184, Tnr: 0.8987, F1S: 0.909259932919118
+
+
+ Results for max_df= 0.910000 
+
+Accuracy: 0.90855, True Positives: 9171, False Positives: 1015, True Negative: 9000, False Negative: 814, Precision: 0.9004, Tpr: 0.9185, Tnr: 0.8987, F1S: 0.9093599428225851
+
+
+ Results for max_df= 0.930000 
+
+Accuracy: 0.90855, True Positives: 9171, False Positives: 1015, True Negative: 9000, False Negative: 814, Precision: 0.9004, Tpr: 0.9185, Tnr: 0.8987, F1S: 0.9093599428225851
+
+
+ Results for max_df= 0.950000 
+
+Accuracy: 0.90845, True Positives: 9169, False Positives: 1015, True Negative: 9000, False Negative: 816, Precision: 0.9003, Tpr: 0.9183, Tnr: 0.8987, F1S: 0.9092109204882877
+
+
+ Results for max_df= 0.970000 
+
+Accuracy: 0.90885, True Positives: 9175, False Positives: 1013, True Negative: 9002, False Negative: 810, Precision: 0.9006, Tpr: 0.9189, Tnr: 0.8989, F1S: 0.9096579719703215
+
