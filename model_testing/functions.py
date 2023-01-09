@@ -1,10 +1,10 @@
-from matplotlib import pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 import pandas as pd
 import pickle
 import sklearn.metrics as mt
+import matplotlib.pyplot as plt
 
 
 dataname='../datafile/preproc_data_def.csv'
@@ -12,9 +12,10 @@ def openDataset():
     dataset = pd.read_csv(dataname)
     x = dataset['review']
     y = dataset['sentiment']
+    return x,y
+
+def splitDataset(x,y):
     return train_test_split(x, y, test_size=0.2, random_state=24)
-
-
 def Vectorizer_Tfidf(X_train, X_test,maxdf):
     vector = TfidfVectorizer(min_df=2, ngram_range=(1, 2))
     X_train = vector.fit_transform(X_train)
@@ -23,8 +24,8 @@ def Vectorizer_Tfidf(X_train, X_test,maxdf):
     return X_train, X_test
 
 
-def Vectorizer_Cv(X_train, X_test):
-    cv = CountVectorizer(min_df=2, ngram_range=(1, 2))
+def Vectorizer_Cv(X_train, X_test,max_df):
+    cv = CountVectorizer(min_df=2, ngram_range=(1, 2),max_df=max_df)
     X_train = cv.fit_transform(X_train)
     X_test = cv.transform(X_test)
     exportmodel(cv,"../export/cv_save.pkl")
