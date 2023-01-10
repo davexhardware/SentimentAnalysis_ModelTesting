@@ -4,7 +4,8 @@ import sklearn.metrics as mt
 from matplotlib import pyplot as plt
 from model_testing import functions
 
-X_train, X_test, y_train, y_test = functions.openDataset()
+x,y=functions.openDataset()
+X_train, X_test, y_train, y_test = functions.splitDataset(x,y)
 X_trainv, X_testv = functions.Vectorizer_Tfidf(X_train,X_test)
 
 

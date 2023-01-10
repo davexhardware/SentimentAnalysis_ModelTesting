@@ -6,6 +6,7 @@ import pandas as pd
 
 # import random
 # nltk.download('punkt')
+# nltk.download('stopwords')
 class Preprocessing:
     def createstopw(self):
         stopwords = []
