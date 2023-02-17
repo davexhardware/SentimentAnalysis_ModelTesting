@@ -6,5 +6,5 @@ In detail, this is the <b>first of three</b> repositories, and those files conta
 - a comparison between the algorithms's performance (datafile/'tabella risultati.xlsx')
 - the exported final model (Logistic Regression with CounVectorizer), the Vectorizer in Pickle format
 
-The other repositories are:
+The other repositories are:<br>
 Implementation of the backend server (Uvicorn and FastAPI) that can be used to access to the model implementation via HTML request on local port 5555. The server implements a "/healt_check" access point (GET method only) and a "/prediction" feature (POST method only) which receives in input the sentence and returns the prediction result and the confidence score: <a href="https://github.com/davexhardware/SentimentAnalysis_Backend">Backend repo</a>
